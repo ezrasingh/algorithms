@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "algorithms-excercise"
+version = "0.1.0"
+description = "Collection of unit test for excercising data structures and algorithms implementations"
+authors = ["Ezra Singh <ezra@liontech.nyc>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^6.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
