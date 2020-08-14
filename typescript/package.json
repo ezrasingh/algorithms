@@ -2,12 +2,12 @@
   "name": "algorithms-excercise",
   "version": "1.0.0",
   "description": "Collection of unit test for excercising data structures and algorithms implementations",
-  "main": "index.js",
+  "main": "main.ts",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node main.ts"
   },
   "author": "Ezra Singh <ezra@liontech.nyc>",
   "license": "MIT",
@@ -17,5 +17,9 @@
     "eslint": "^7.6.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0"
+  },
+  "dependencies": {
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
   }
 }

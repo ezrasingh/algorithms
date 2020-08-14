@@ -1,21 +1,21 @@
 {
   "compilerOptions": {
-     "lib": [
-        "es5",
-        "es6",
-        "es2017"
-     ],
-     "target": "es6",
-     "module": "commonjs",
-     "moduleResolution": "node",
-     "emitDecoratorMetadata": true,
-     "experimentalDecorators": true,
-     "sourceMap": true,
-     "alwaysStrict": true
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["dom", "es2017"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "types": ["node", "jest"],
+    "baseUrl": "src",
+    "paths": {
+      "@structures": [ "structures/*" ],
+      "@algorithms": [ "algorithms/*" ]
+    }
   },
-  "include": [
-     "src/**/*.ts",
-     "src/**/*.spec.ts"
-   ],
-   "exclude": ["node_modules"]
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "src/**/*.test.tsx"
+  ]
 }
