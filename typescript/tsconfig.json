@@ -13,9 +13,8 @@
       "@algorithms": [ "algorithms/*" ]
     }
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "tests/**/*"],
   "exclude": [
-    "node_modules",
-    "src/**/*.test.tsx"
+    "node_modules"
   ]
 }
