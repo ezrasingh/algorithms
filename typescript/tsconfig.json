@@ -1,17 +1,12 @@
 {
   "compilerOptions": {
-    "module": "esnext",
-    "target": "es5",
-    "lib": ["dom", "es2017"],
+    "module": "commonjs",
+    "target": "esnext",
+    "lib": ["dom", "esnext"],
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "types": ["node", "jest"],
-    "baseUrl": "src",
-    "paths": {
-      "@structures": [ "structures/*" ],
-      "@algorithms": [ "algorithms/*" ]
-    }
+    "types": ["node", "jest"]
   },
   "include": ["src/**/*", "tests/**/*"],
   "exclude": [
