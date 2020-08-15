@@ -4,7 +4,7 @@ import { LinkedList } from './src/structures';
 /**
  * Insert implementation driver code here
  */
-async function main(): Promise<any>{
+function main(): void{
     const list = new LinkedList([12, 10, 9])
     console.log(list.object());
 };
