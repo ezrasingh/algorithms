@@ -3,6 +3,7 @@ import DataNode, { DataNodeType, DataKey } from './Data';
 export default class LinkedList {
     private head: DataNode;
 
+    /** initialize the data structure */
     constructor(state: any | any[]) {
         if (Array.isArray(state)) {
             state = state.reverse()
@@ -15,11 +16,13 @@ export default class LinkedList {
         }
     }
 
+    /** add node to the beginning of the list */
     prepend(data: any): LinkedList {
         this.head = new DataNode(data, this.head);
         return this;
     }
 
+    /** returns data representation */
     object(): DataNodeType[] {
         const representation = []
         let cursor: DataNode | null = this.head;
